@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .wrapper {
+        width: 210px;
+      }
+      .user-id {
+        height: 30px;
+        width: 98%;
+      }
+      .hide {
+        display: none;
+      }
+      .btn-one-click-go {
+        height: 30px;
+        width: 100%;
+      }
+      .radio-group label,
+      .radio-group input {
+        cursor: pointer;
+      }
+      /* button {
+        height: 30px;
+        width: 30px;
+        outline: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>Color Index: <div id="displayDiv"></div>
+      <button id="changeColor" class="hide-">Change Color</button>
+      <!-- <br/> -->
+      <button id="openTestHarness1" class="btn-one-click-go">SUBMIT</button>
+      <div class="radio-group" style="font-size: 10px;">
+        <label for="env1"><input type="radio" name="environment" id="env1" value="dev">: DEV</label>
+        <label for="env2"><input type="radio" name="environment" id="env2" value="test">: TEST</label>
+        <label for="env3"><input type="radio" name="environment" id="env3" value="uat" checked>: UAT</label>
+        <label for="env4"><input type="radio" name="environment" id="env4" value="preprod">: Pre-prod</label>
+      </div>
+      <!-- <br/><br/> -->
+      <input type="text" id="userId" class="user-id" />
+      <!-- <br/> -->
+      <button id="openTestHarness" class="hide">Open Test Harness</button>
+      <!-- <br/> -->
+      <button id="setIdentityProviderAndEnv" class="hide">Set Identity Provider And Env</button>
+      <!-- <br/> -->
+      <button id="postUserID" class="hide">Post User ID</button>
+    </div>
+    <script src="popup.js"></script> 
+    <!-- <script src="auto-submit.js"></script> -->
+  </body>
+</html>
